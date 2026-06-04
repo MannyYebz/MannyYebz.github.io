@@ -151,7 +151,7 @@ h2 {
 h1 {
   max-width: 780px;
   margin-bottom: 24px;
-  font-size: clamp(3.8rem, 9vw, 8.25rem);
+  font-size: clamp(3.5rem, 7.2vw, 6.8rem);
 }
 
 h2 {
@@ -367,8 +367,8 @@ dd {
 }
 
 .feature-card {
-  grid-row: span 2;
-  min-height: 616px;
+  grid-column: span 2;
+  min-height: 420px;
   background:
     linear-gradient(160deg, rgba(31, 37, 35, 0.08), transparent 45%),
     linear-gradient(20deg, rgba(182, 76, 46, 0.14), transparent 55%),
@@ -379,6 +379,25 @@ dd {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2.4rem, 4.6vw, 4.8rem);
   line-height: 0.95;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tags li {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.58);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 .skill-columns {
@@ -528,6 +547,7 @@ dd {
   }
 
   .feature-card {
+    grid-column: auto;
     min-height: 360px;
   }
 
