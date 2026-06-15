@@ -253,6 +253,33 @@ h3 {
   font-size: clamp(1.55rem, 2.4vw, 2.4rem);
 }
 
+.contributor-note {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  background: #eff6ff;
+  border-radius: 14px;
+}
+
+.contributor-note span {
+  color: var(--blue-dark);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contributor-note strong {
+  font-size: 1.05rem;
+}
+
+.contributor-note p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
