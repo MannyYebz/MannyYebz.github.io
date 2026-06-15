@@ -244,6 +244,9 @@ h3 {
 }
 
 .headshot {
+  width: 25%;
+  height: auto;
+  justify-self: center;
   aspect-ratio: 1;
   border-radius: 16px;
   background: var(--surface-soft);
