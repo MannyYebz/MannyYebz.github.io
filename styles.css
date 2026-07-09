@@ -329,7 +329,8 @@ h3 {
 .project-summary,
 .project-details dd,
 .skills-grid p,
-.timeline p {
+.timeline p,
+.experience-list {
   color: var(--muted);
 }
 
@@ -476,6 +477,32 @@ h3 {
   width: 4px;
   background: linear-gradient(180deg, var(--blue), var(--teal));
   border-radius: 999px;
+}
+
+.timeline-meta {
+  margin-bottom: 14px;
+  color: var(--soft);
+  font-weight: 800;
+}
+
+.experience-list {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding-left: 20px;
+}
+
+.experience-list li::marker {
+  color: var(--teal);
+}
+
+.credential-note {
+  margin: 16px 0 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  background: #eff6ff;
+  border-radius: 14px;
+  font-weight: 800;
 }
 
 .contact-section {
