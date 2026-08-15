@@ -201,6 +201,20 @@ h3 {
   font-size: clamp(1rem, 1.5vw, 1.18rem);
 }
 
+.section-heading .attribution-note,
+.attribution-note {
+  max-width: 820px;
+  margin-top: 18px;
+  padding-left: 14px;
+  border-left: 3px solid var(--blue);
+  color: var(--soft);
+  font-size: 0.9rem;
+}
+
+.open-attribution {
+  margin: 24px 0 0;
+}
+
 .hero-intro {
   max-width: 660px;
 }
@@ -252,6 +266,12 @@ h3 {
   background: rgba(255, 255, 255, 0.82);
   border-radius: 18px;
   box-shadow: var(--shadow);
+}
+
+.project-card-upcoming,
+.selected-project-upcoming {
+  border-style: dashed;
+  background: rgba(239, 246, 255, 0.72);
 }
 
 .hero-card {
