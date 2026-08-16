@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Emmanuel Yeboah works across data analytics, machine learning, pipelines, and applied AI using Python and SQL." />
+    <meta name="description" content="Emmanuel Yeboah uses Python and SQL for data analysis, data pipelines, and machine learning." />
     <meta name="theme-color" content="#f4f2ed" />
-    <meta property="og:title" content="Emmanuel Yeboah | Data, ML &amp; Applied AI" />
-    <meta property="og:description" content="A quantitative portfolio spanning analytics, data systems, machine learning, and applied AI." />
+    <meta property="og:title" content="Emmanuel Yeboah | Data, ML &amp; Software" />
+    <meta property="og:description" content="A portfolio of data analysis, data engineering, machine learning, and software projects." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mannyyebz.github.io/" />
     <meta property="og:image" content="https://mannyyebz.github.io/assets/professional-headshot.png" />
-    <title>Emmanuel Yeboah | Data, ML &amp; Applied AI</title>
+    <title>Emmanuel Yeboah | Data, ML &amp; Software</title>
     <link rel="icon" href="assets/professional-headshot.png" />
     <link rel="preload" as="image" href="assets/professional-headshot.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -34,9 +34,9 @@
     <main id="content">
       <section class="hero section-shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="kicker">Data <span>·</span> Machine Learning <span>·</span> Applied AI</p>
-          <h1 id="hero-title">From messy data to systems people can actually use.</h1>
-          <p class="hero-intro">I work across analytics, data pipelines, and machine learning, using Python and SQL to turn operational problems into reliable data products and practical decisions.</p>
+          <p class="kicker">Data <span>·</span> Machine Learning <span>·</span> Software</p>
+          <h1 id="hero-title">I build data pipelines, analyses, and machine learning systems.</h1>
+          <p class="hero-intro">I use Python and SQL to analyze operational data, automate data workflows, and train machine learning models.</p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#work">View my work</a>
             <a class="button" href="assets/emmanuel-yeboah-resume.pdf" download>Download résumé</a>
@@ -63,7 +63,7 @@
       </section>
 
       <section class="credibility section-shell" aria-label="Professional highlights">
-        <div><strong>2023—Now</strong><span>Data &amp; operational experience</span></div>
+        <div><strong>2023 to Now</strong><span>Data &amp; operational experience</span></div>
         <div><strong>Math + Physics</strong><span>Quantitative foundation</span></div>
         <div><strong>Python + SQL</strong><span>Primary toolkit</span></div>
       </section>
@@ -71,8 +71,8 @@
       <section class="work-section section-shell" id="work" aria-labelledby="work-title">
         <div class="section-intro">
           <p class="section-index">01 / Selected work</p>
-          <h2 id="work-title">Systems, not isolated notebooks.</h2>
-          <p>The strongest work here connects data preparation, analysis, modeling, and delivery. Technical claims reflect the linked repositories and résumé; no performance metrics are inferred.</p>
+          <h2 id="work-title">Selected data and machine learning projects.</h2>
+          <p>These projects show how I clean data, build pipelines, train models, and deliver results through APIs and reports. Each description is based on the linked repository.</p>
         </div>
 
         <div class="flagship-list">
@@ -80,9 +80,9 @@
             <div class="project-copy">
               <div class="project-meta"><span>P.01</span><span>ML system</span><span class="status">Public</span></div>
               <h3>Customer Churn ML Pipeline</h3>
-              <p class="project-lead">A production-style workflow for moving structured customer data from preprocessing through training, tracking, evaluation, and API inference.</p>
+              <p class="project-lead">A workflow that preprocesses customer data, trains and tracks a churn model, evaluates it, and serves predictions through an API.</p>
               <dl class="project-facts">
-                <div><dt>Problem</dt><dd>Keep training and inference transformations consistent while making experiments reproducible.</dd></div>
+                <div><dt>Problem</dt><dd>Keep training and inference transformations consistent while making experiments repeatable.</dd></div>
                 <div><dt>System</dt><dd>Stratified splits, persisted preprocessing, PyTorch training, MLflow tracking and registry, evaluation, and FastAPI serving.</dd></div>
                 <div><dt>Delivery</dt><dd>Docker configuration, health and prediction endpoints, typed schemas, and automated tests.</dd></div>
               </dl>
@@ -107,7 +107,34 @@
 
           <article class="flagship flagship-reverse">
             <div class="project-copy">
-              <div class="project-meta"><span>P.02</span><span>Data pipeline</span><span class="status">Public</span></div>
+              <div class="project-meta"><span>P.02</span><span>Data orchestration</span><span class="status">Public</span></div>
+              <h3>Apache Airflow Data Lab</h3>
+              <p class="project-lead">A Docker-based orchestration lab that progresses from foundational Python ETL workflows to scheduled weather and Spark pipelines.</p>
+              <dl class="project-facts">
+                <div><dt>Problem</dt><dd>Coordinate recurring data work with visible dependencies, retries, scheduling, and repeatable local infrastructure.</dd></div>
+                <div><dt>System</dt><dd>Airflow DAGs run Python and PySpark transformations, collect OpenWeatherMap data, and manage task handoffs through XCom.</dd></div>
+                <div><dt>Delivery</dt><dd>Containerized CeleryExecutor stacks with PostgreSQL and Redis, plus pipeline outputs to Amazon S3 and MongoDB.</dd></div>
+              </dl>
+              <p class="tech-line">APACHE AIRFLOW / PYTHON / PYSPARK / DOCKER / AWS S3 / MONGODB</p>
+              <a class="project-link" href="https://github.com/MannyYebz/apache">Inspect repository <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-visual orchestration-visual" role="img" aria-label="Apache Airflow orchestration: scheduled API extraction, Python and Spark transformations, and delivery to Amazon S3 and MongoDB">
+              <span class="visual-label">ORCHESTRATION / SCHEDULE → DELIVER</span>
+              <div class="orchestration-map">
+                <div class="orchestration-node source-node"><small>Source</small><strong>OpenWeather API</strong></div>
+                <b aria-hidden="true">↓</b>
+                <div class="orchestration-node airflow-node"><small>Apache Airflow</small><strong>Schedule · retry · monitor</strong></div>
+                <b aria-hidden="true">↓</b>
+                <div class="task-chain"><span>Sensor</span><b>→</b><span>Extract</span><b>→</b><span>Transform</span></div>
+                <b aria-hidden="true">↓</b>
+                <div class="output-nodes"><span><small>Object store</small><strong>Amazon S3</strong></span><span><small>Document store</small><strong>MongoDB</strong></span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="flagship">
+            <div class="project-copy">
+              <div class="project-meta"><span>P.03</span><span>Data pipeline</span><span class="status">Public</span></div>
               <h3>Weather Data Pipeline</h3>
               <p class="project-lead">A repeatable API workflow that turns live weather responses and five-day forecasts into structured comparisons and visual reports.</p>
               <dl class="project-facts">
@@ -130,9 +157,9 @@
             </div>
           </article>
 
-          <article class="flagship">
+          <article class="flagship flagship-reverse">
             <div class="project-copy">
-              <div class="project-meta"><span>P.03</span><span>Applied NLP</span><span class="status">Public</span></div>
+              <div class="project-meta"><span>P.04</span><span>Text analysis</span><span class="status">Public</span></div>
               <h3>News Sentiment Analyzer</h3>
               <p class="project-lead">An analysis pipeline that collects live headlines, scores language polarity, and compares sentiment across six news categories.</p>
               <dl class="project-facts">
@@ -146,7 +173,7 @@
             <figure class="project-visual chart-visual">
               <span class="visual-label">GENERATED OUTPUT / SENTIMENT BY CATEGORY</span>
               <img src="assets/news-sentiment-chart.png" alt="Bar chart comparing positive, neutral, and negative headline counts across six news categories" loading="lazy" />
-              <figcaption>Repository output—not a recreated or illustrative result.</figcaption>
+              <figcaption>This chart is an output from the repository.</figcaption>
             </figure>
           </article>
         </div>
@@ -157,11 +184,11 @@
           <p class="section-index">Currently building / Target 20 Aug 2026</p>
           <div class="build-status"><span aria-hidden="true"></span>In development</div>
           <h2 id="building-title">Retrieval-Augmented Generation Pipeline</h2>
-          <p>A document-question answering system focused on grounded responses and traceable sources. The repository currently contains document loading and chunking foundations; retrieval, generation, citations, and evaluation remain active work.</p>
+          <p>A document question-answering project designed to connect each answer to cited source text. The repository currently contains document loading and chunking; retrieval, answer generation, citations, and evaluation are still in progress.</p>
           <a class="project-link" href="https://github.com/MannyYebz/rag-project">Follow the build <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="rag-flow" role="img" aria-label="Planned RAG flow: documents, chunking, embeddings, vector store, retrieval, language model, grounded answer">
-          <span>Documents</span><b>→</b><span>Chunking</span><b>→</b><span class="future-node">Embeddings</span><b>→</b><span class="future-node">Vector store</span><b>→</b><span class="future-node">Retrieval</span><b>→</b><span class="future-node">LLM</span><b>→</b><span class="future-node">Grounded answer</span>
+        <div class="rag-flow" role="img" aria-label="Planned RAG flow: documents, chunking, embeddings, vector store, retrieval, language model, cited answer">
+          <span>Documents</span><b>→</b><span>Chunking</span><b>→</b><span class="future-node">Embeddings</span><b>→</b><span class="future-node">Vector store</span><b>→</b><span class="future-node">Retrieval</span><b>→</b><span class="future-node">Language model</span><b>→</b><span class="future-node">Cited answer</span>
         </div>
       </section>
 
@@ -180,9 +207,9 @@
         <div class="margin-note" aria-hidden="true"><span>02 / Approach</span><i>x → observe</i><i>f(x) → test</i><i>Δ → learn</i></div>
         <div class="approach-copy">
           <p class="section-index">How I think</p>
-          <h2 id="approach-title">Adapt to the system, then make it useful.</h2>
-          <p>My path across mathematics, physics, operational analytics, data pipelines, and machine learning has taught me to keep adapting. When the tools, constraints, or questions change, I learn the system, test my assumptions, and find a practical way forward.</p>
-          <blockquote>Changing circumstances do not stop the work—they give me a new system to understand and another opportunity to become more useful.</blockquote>
+          <h2 id="approach-title">Learn the system. Test the assumptions.</h2>
+          <p>My background in mathematics, physics, operational analytics, data pipelines, and machine learning shapes how I solve problems. When tools or constraints change, I read the documentation, test the workflow, and record what changed.</p>
+          <blockquote>A result is useful when the process is clear, tested, and easy for someone else to inspect.</blockquote>
         </div>
       </section>
 
@@ -192,21 +219,21 @@
           <article><span>01</span><h3>Data &amp; analysis</h3><p>Python, SQL, pandas, NumPy, statistical analysis, time-series analysis, experimentation</p></article>
           <article><span>02</span><h3>Machine learning</h3><p>PyTorch, scikit-learn, model training, evaluation, anomaly detection, MLflow</p></article>
           <article><span>03</span><h3>Data systems</h3><p>ETL, Apache Airflow, REST APIs, PostgreSQL, AWS S3, PyArrow, validation</p></article>
-          <article><span>04</span><h3>Production</h3><p>FastAPI, Docker, Git, Linux, automated testing, reproducible workflows</p></article>
+          <article><span>04</span><h3>Software delivery</h3><p>FastAPI, Docker, Git, Linux, automated testing, repeatable workflows</p></article>
           <article><span>05</span><h3>Visualization</h3><p>Matplotlib, Power BI, Tableau, Excel, technical reporting, data storytelling</p></article>
         </div>
       </section>
 
       <section class="experience-section section-shell" id="experience" aria-labelledby="experience-title">
-        <div class="compact-heading"><p class="section-index">04 / Experience</p><h2 id="experience-title">Analysis grounded in operational work.</h2></div>
+        <div class="compact-heading"><p class="section-index">04 / Experience</p><h2 id="experience-title">Data analysis informed by operational work.</h2></div>
         <div class="experience-list">
           <article>
-            <div class="role-meta"><span>Sep 2023—Present</span><span>Dover, DE</span></div>
+            <div class="role-meta"><span>Sep 2023 to Present</span><span>Dover, DE</span></div>
             <div><h3>Data Analyst</h3><p class="company">HardTanh LLC</p></div>
             <ul><li>Analyze operational and simulation data with Python and SQL to identify trends, anomalies, and performance factors.</li><li>Build repeatable workflows for cleaning, validation, transformation, reporting, and downstream use.</li><li>Investigate data-quality issues, trace unexpected results to source data, and validate outputs before reporting.</li><li>Define metrics and document analytical processes with cross-functional teams.</li></ul>
           </article>
           <article>
-            <div class="role-meta"><span>Oct 2022—Aug 2023</span><span>Fitchburg, MA</span></div>
+            <div class="role-meta"><span>Oct 2022 to Aug 2023</span><span>Fitchburg, MA</span></div>
             <div><h3>Sales Representative</h3><p class="company">T-Mobile · Arch Telecom</p></div>
             <ul><li>Reviewed sales, customer, and transaction data to track store performance and changes in key metrics.</li><li>Used Excel and internal reporting tools to support recurring performance reviews.</li><li>Resolved record discrepancies across CRM and point-of-sale systems to support accurate reporting.</li></ul>
           </article>

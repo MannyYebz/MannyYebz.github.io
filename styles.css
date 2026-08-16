@@ -217,6 +217,17 @@ ul { margin: 0; }
 .architecture-stack span, .architecture-stack small { font-family: var(--mono); color: var(--soft); font-size: 0.62rem; }
 .architecture-stack .accent-node { background: var(--accent); color: white; border-color: var(--accent); }
 .architecture-stack .accent-node span, .architecture-stack .accent-node small { color: #f9e8e3; }
+.orchestration-map { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 13px; margin-top: 40px; }
+.orchestration-map > b { color: var(--accent); font-family: var(--mono); line-height: 1; }
+.orchestration-node { width: min(100%, 270px); display: grid; gap: 4px; padding: 16px 18px; border: 1px solid var(--ink); background: var(--surface); text-align: center; }
+.orchestration-node small, .output-nodes small { color: var(--soft); font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; }
+.airflow-node { border-color: var(--accent); background: var(--accent); color: white; }
+.airflow-node small { color: #f9e8e3; }
+.task-chain { width: 100%; display: flex; align-items: center; justify-content: center; gap: 9px; }
+.task-chain span { padding: 9px 10px; border: 1px solid var(--ink); background: var(--surface); font-family: var(--mono); font-size: 0.63rem; text-transform: uppercase; }
+.task-chain b { color: var(--accent); }
+.output-nodes { width: 100%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.output-nodes span { display: grid; gap: 4px; padding: 15px; border: 1px solid var(--ink); background: var(--surface); text-align: center; }
 .pipeline-row { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 7px; margin-top: 64px; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; }
 .pipeline-row span { padding: 8px; border: 1px solid var(--ink); background: var(--surface); }
 .pipeline-row b { color: var(--accent); }
@@ -389,6 +400,9 @@ ul { margin: 0; }
   .project-visual { min-height: 390px; padding: 20px; }
   .architecture-stack { gap: 8px; margin-top: 30px; }
   .architecture-stack div { min-height: 82px; padding: 10px; }
+  .orchestration-map { margin-top: 28px; }
+  .task-chain { flex-wrap: wrap; }
+  .task-chain span { padding: 8px; }
   .pipeline-row { flex-wrap: wrap; justify-content: flex-start; margin-top: 38px; }
   .mini-plot { height: 185px; margin-top: 42px; }
   .rag-flow { padding: 20px; }
