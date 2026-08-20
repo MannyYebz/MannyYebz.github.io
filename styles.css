@@ -106,7 +106,7 @@ ul { margin: 0; }
 }
 .nav-links a:hover::after, .nav-links a:focus-visible::after, .nav-links .active::after { transform: scaleX(1); transform-origin: left; }
 .nav-open-to { display: inline-flex; align-items: center; gap: 8px; }
-.nav-open-to > span, .build-status > span, .availability-heading > span {
+.nav-open-to > span, .availability-heading > span {
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -255,7 +255,6 @@ ul { margin: 0; }
 .building-section { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(48px, 8vw, 110px); padding-block: clamp(72px, 9vw, 118px); border-bottom: 1px solid var(--line-dark); background: var(--dark); color: white; box-shadow: 100vw 0 var(--dark), -100vw 0 var(--dark); clip-path: inset(0 -100vw); }
 .building-copy h2 { max-width: 660px; margin-top: 16px; }
 .building-copy > p:not(.section-index) { max-width: 620px; margin-top: 24px; color: #c9ceca; }
-.build-status { width: fit-content; display: flex; align-items: center; gap: 9px; margin-top: 24px; font-family: var(--mono); font-size: 0.67rem; text-transform: uppercase; }
 .building-section .project-link { color: white; }
 .rag-flow { align-self: center; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 30px; border: 1px solid #6e746f; }
 .rag-flow span { padding: 10px 12px; border: 1px solid #a4aaa5; font-family: var(--mono); font-size: 0.67rem; }
