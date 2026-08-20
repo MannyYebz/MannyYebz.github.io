@@ -228,6 +228,18 @@ ul { margin: 0; }
 .task-chain b { color: var(--accent); }
 .output-nodes { width: 100%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 .output-nodes span { display: grid; gap: 4px; padding: 15px; border: 1px solid var(--ink); background: var(--surface); text-align: center; }
+.spotify-map { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 11px; margin-top: 34px; }
+.spotify-map > b { color: var(--accent); font-family: var(--mono); line-height: 1; }
+.spotify-stage { display: grid; align-content: center; gap: 3px; min-height: 68px; padding: 10px 12px; border: 1px solid var(--ink); background: var(--surface); text-align: center; }
+.spotify-stage { width: min(100%, 310px); }
+.spotify-map small, .spotify-map em { color: var(--soft); font-family: var(--mono); font-size: 0.57rem; font-style: normal; text-transform: uppercase; }
+.spotify-implemented { border-color: var(--accent); background: var(--accent); color: white; }
+.spotify-implemented small, .spotify-implemented em { color: #f9e8e3; }
+.spotify-planned { border-style: dashed !important; }
+.spotify-architecture-branch { width: 100%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.spotify-architecture-branch span { display: grid; gap: 3px; padding: 11px; border: 1px solid var(--ink); background: var(--surface); text-align: center; }
+.spotify-progress { width: 100%; margin-top: 4px; padding: 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); color: var(--muted); font-size: 0.72rem; }
+.spotify-progress strong { color: var(--ink); }
 .pipeline-row { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 7px; margin-top: 64px; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; }
 .pipeline-row span { padding: 8px; border: 1px solid var(--ink); background: var(--surface); }
 .pipeline-row b { color: var(--accent); }
@@ -401,6 +413,9 @@ ul { margin: 0; }
   .architecture-stack { gap: 8px; margin-top: 30px; }
   .architecture-stack div { min-height: 82px; padding: 10px; }
   .orchestration-map { margin-top: 28px; }
+  .spotify-map { margin-top: 24px; }
+  .spotify-stage { min-height: 62px; padding: 8px; }
+  .spotify-architecture-branch { gap: 7px; }
   .task-chain { flex-wrap: wrap; }
   .task-chain span { padding: 8px; }
   .pipeline-row { flex-wrap: wrap; justify-content: flex-start; margin-top: 38px; }

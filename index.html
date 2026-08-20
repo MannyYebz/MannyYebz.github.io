@@ -78,7 +78,38 @@
         <div class="flagship-list">
           <article class="flagship">
             <div class="project-copy">
-              <div class="project-meta"><span>P.01</span><span>ML system</span><span class="status">Public</span></div>
+              <div class="project-meta"><span>P.01</span><span>Data engineering</span><span class="status">In progress</span></div>
+              <h3>Spotify Airflow Pipeline</h3>
+              <p class="project-lead">A Spotify data engineering project evolving a working local analytics pipeline into an orchestrated workflow with durable cloud storage.</p>
+              <dl class="project-facts">
+                <div><dt>Built</dt><dd>OAuth-secured Spotify extraction, history import, schema normalization, measurement enrichment, event deduplication, CSV persistence, charts, and terminal reports.</dd></div>
+                <div><dt>Packaged</dt><dd>The synchronous Python pipeline runs locally or in Docker, with its generated data mounted back to the host.</dd></div>
+                <div><dt>Next</dt><dd>The planned orchestration path is Spotify API → Airflow → Redis → S3, with Postgres reserved for Airflow metadata. Those services are not implemented in the repository yet.</dd></div>
+              </dl>
+              <p class="tech-line">PYTHON / SPOTIFY WEB API / OAUTH 2.0 / PANDAS / MATPLOTLIB / DOCKER</p>
+              <a class="project-link" href="https://github.com/MannyYebz/spotify-airflow-pipeline">Inspect repository <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-visual spotify-visual" role="img" aria-label="Spotify Airflow pipeline architecture in progress: Spotify API to Airflow, Redis, and Amazon S3, with Postgres holding Airflow metadata. The current repository implements Spotify extraction and a local Python analytics pipeline; the orchestration services are planned.">
+              <span class="visual-label">ARCHITECTURE / IN PROGRESS</span>
+              <div class="spotify-map">
+                <div class="spotify-stage spotify-implemented"><small>Implemented</small><strong>Spotify API</strong><em>OAuth + extraction</em></div>
+                <b aria-hidden="true">↓</b>
+                <div class="spotify-stage spotify-planned"><small>Planned orchestration</small><strong>Apache Airflow</strong><em>schedule + monitor</em></div>
+                <b aria-hidden="true">↓</b>
+                <div class="spotify-architecture-branch">
+                  <span class="spotify-planned"><small>Planned dispatch</small><strong>Redis</strong></span>
+                  <span class="spotify-planned"><small>Planned metadata</small><strong>Postgres</strong></span>
+                </div>
+                <b aria-hidden="true">↓</b>
+                <div class="spotify-stage spotify-planned"><small>Planned data store</small><strong>Amazon S3</strong><em>pipeline outputs</em></div>
+                <p class="spotify-progress"><strong>Working today</strong> Python transform + dedup → local CSVs → charts + CLI</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flagship flagship-reverse">
+            <div class="project-copy">
+              <div class="project-meta"><span>P.02</span><span>ML system</span><span class="status">Public</span></div>
               <h3>Customer Churn ML Pipeline</h3>
               <p class="project-lead">A workflow that preprocesses customer data, trains and tracks a churn model, evaluates it, and serves predictions through an API.</p>
               <dl class="project-facts">
@@ -105,9 +136,9 @@
             </div>
           </article>
 
-          <article class="flagship flagship-reverse">
+          <article class="flagship">
             <div class="project-copy">
-              <div class="project-meta"><span>P.02</span><span>Data orchestration</span><span class="status">Public</span></div>
+              <div class="project-meta"><span>P.03</span><span>Data orchestration</span><span class="status">Public</span></div>
               <h3>Apache Airflow Data Lab</h3>
               <p class="project-lead">A Docker-based orchestration lab that progresses from foundational Python ETL workflows to scheduled weather and Spark pipelines.</p>
               <dl class="project-facts">
@@ -132,9 +163,9 @@
             </div>
           </article>
 
-          <article class="flagship">
+          <article class="flagship flagship-reverse">
             <div class="project-copy">
-              <div class="project-meta"><span>P.03</span><span>Data pipeline</span><span class="status">Public</span></div>
+              <div class="project-meta"><span>P.04</span><span>Data pipeline</span><span class="status">Public</span></div>
               <h3>Weather Data Pipeline</h3>
               <p class="project-lead">A repeatable API workflow that turns live weather responses and five-day forecasts into structured comparisons and visual reports.</p>
               <dl class="project-facts">
@@ -157,9 +188,9 @@
             </div>
           </article>
 
-          <article class="flagship flagship-reverse">
+          <article class="flagship">
             <div class="project-copy">
-              <div class="project-meta"><span>P.04</span><span>Text analysis</span><span class="status">Public</span></div>
+              <div class="project-meta"><span>P.05</span><span>Text analysis</span><span class="status">Public</span></div>
               <h3>News Sentiment Analyzer</h3>
               <p class="project-lead">An analysis pipeline that collects live headlines, scores language polarity, and compares sentiment across six news categories.</p>
               <dl class="project-facts">
@@ -195,11 +226,10 @@
       <section class="other-work section-shell" aria-labelledby="other-work-title">
         <div class="compact-heading"><p class="section-index">More experiments</p><h2 id="other-work-title">Smaller studies, useful questions.</h2></div>
         <div class="experiment-list">
-          <a href="https://github.com/MannyYebz/spotify-listening-analytics"><span>E.01 / API + OAuth</span><strong>Spotify Listening Analytics</strong><em>Python · OAuth 2.0 · pandas</em><b>↗</b></a>
-          <a href="https://github.com/MannyYebz/stock_market_analytics"><span>E.02 / Time series</span><strong>AAPL Market Analytics</strong><em>Python · rolling metrics · charts</em><b>↗</b></a>
-          <a href="https://github.com/MannyYebz/covid-analytics"><span>E.03 / Public health</span><strong>California COVID-19 Trends</strong><em>pandas · NumPy · Matplotlib</em><b>↗</b></a>
-          <a href="https://github.com/MannyYebz/budget-tracker"><span>E.04 / CLI analytics</span><strong>Budget Tracking Tool</strong><em>Python · CSV · reporting</em><b>↗</b></a>
-          <a href="https://github.com/MannyYebz/BLMC"><span>E.05 / Risk model</span><strong>Loss Given Default Model</strong><em>R · feature engineering · modeling</em><b>↗</b></a>
+          <a href="https://github.com/MannyYebz/stock_market_analytics"><span>E.01 / Time series</span><strong>AAPL Market Analytics</strong><em>Python · rolling metrics · charts</em><b>↗</b></a>
+          <a href="https://github.com/MannyYebz/covid-analytics"><span>E.02 / Public health</span><strong>California COVID-19 Trends</strong><em>pandas · NumPy · Matplotlib</em><b>↗</b></a>
+          <a href="https://github.com/MannyYebz/budget-tracker"><span>E.03 / CLI analytics</span><strong>Budget Tracking Tool</strong><em>Python · CSV · reporting</em><b>↗</b></a>
+          <a href="https://github.com/MannyYebz/BLMC"><span>E.04 / Risk model</span><strong>Loss Given Default Model</strong><em>R · feature engineering · modeling</em><b>↗</b></a>
         </div>
       </section>
 
